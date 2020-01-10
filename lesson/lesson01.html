@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>商品一覧</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="lesson01.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1 class="pageTitle">論理体系一覧</h1>
+         <!--  検索欄 -->
+        <div class="search">
+          <div class="result">
+            検索結果 <span class="count">{{filteredList.length}}件</span>
+          </div>
+          <div class="condition">
+            <div class="target">
+              <label><input type="checkbox" v-model="showClassical">古典主義{{showClassical}}</label>
+              <label><input type="checkbox" v-model="showNonClassical">非古典論理{{showNonClassical}}</label>
+              <label><input type="checkbox" v-model="showOthers">その他論理{{showOthers}}</label>
+            </div>
+            <div class="sort">
+              <label for="sort">並び替え</label>
+              <select id="sort" class="sorting">
+                <option value="1">標準</option>
+                <option value="2"> 価格が安い順</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!--論理一覧-->
+        <div v-if="isError">{{message}}</div>
+        <div class="list">
+          <div class="item" v-for="logic in filteredList" v-bind:key="logics.id">
+            <figure class="image">
+              <template v-if="logic.isClassical">
+                <div class="status">古典</div>
+              </template>
+              <template v-if="logic.isNonClassical">
+                <div class="status">非古典</div>
+              </template>
+              <template v-if="logic.isOther">
+                <div class="status">その他</div>
+              </template>
+              <img v-bind:src="logic.image" alt="">
+              <figcaption v-html="logic.name"></figcaption>
+            </figure>
+            <div class="detail">
+              <div class="data1"><span>{{logic.data1 | empty}}</span></div><br>
+              <div class="data2"><span>{{logic.data2 | empty}}</span></div><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="vue.js"></script>
+    <script src="lesson01.js"></script>
+  </body>
+</html>
