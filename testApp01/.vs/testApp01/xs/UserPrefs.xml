@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{1B8C68A2-EE87-469D-96E8-02CACD003AEA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/LaunchScreen.storyboard">
+    <Files>
+      <File FileName="iOS/LaunchScreen.storyboard" />
+      <File FileName="testApp01/MainPage.xaml.fs" Line="44" Column="18" />
+      <File FileName="testApp01/MainPage.xaml" />
+      <File FileName="testApp01/AssemblyInfo.fs" Line="4" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="testApp01" expanded="True" selected="True">
+            <Node name="testApp01" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="testApp01.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.testApp01.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.86015E0F-5105-4AC3-A200-2C5E1EB13C1D">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.testApp01.iOS>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

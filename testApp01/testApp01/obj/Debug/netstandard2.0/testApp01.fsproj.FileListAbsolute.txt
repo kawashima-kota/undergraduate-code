@@ -1,0 +1,6 @@
+/Users/kawashimakouta/Projects/testApp01/testApp01/bin/Debug/netstandard2.0/testApp01.deps.json
+/Users/kawashimakouta/Projects/testApp01/testApp01/bin/Debug/netstandard2.0/testApp01.dll
+/Users/kawashimakouta/Projects/testApp01/testApp01/bin/Debug/netstandard2.0/testApp01.pdb
+/Users/kawashimakouta/Projects/testApp01/testApp01/obj/Debug/netstandard2.0/testApp01.fsprojAssemblyReference.cache
+/Users/kawashimakouta/Projects/testApp01/testApp01/obj/Debug/netstandard2.0/testApp01.dll
+/Users/kawashimakouta/Projects/testApp01/testApp01/obj/Debug/netstandard2.0/testApp01.pdb
